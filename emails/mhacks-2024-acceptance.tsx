@@ -112,6 +112,7 @@ export const StripeWelcomeEmail = () => (
                     <li>Sustainability</li>
                     <li>Accessibility</li>
                     <li>Optimization</li>
+                    <li><Link style={sponsorAnchor} href='https://www.notion.so/MHacks-2024-x-Telora-Founder-s-Track-10624ca0c81b80089f5ae26aad8aa071?pvs=4'>Founder’s Track (with Telora)</Link></li>
                   </ul>
                 </b>
               </Text>
