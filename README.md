@@ -1,6 +1,6 @@
 # email
 
-Email templates using React Email (Resend)
+Email templates using React Email
 
 # React Email Starter
 
