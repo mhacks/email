@@ -4,7 +4,6 @@ Email templates using React Email
 
 <img width="2282" alt="image" src="https://github.com/user-attachments/assets/a030e91a-3323-4c6e-ab25-73d1308b5540">
 
-
 # React Email Starter
 
 A live preview right in your browser so you don't need to keep sending real emails during development.
