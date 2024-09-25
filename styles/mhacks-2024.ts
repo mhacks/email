@@ -3,6 +3,7 @@ export const theme = {
   colors: {
     purple: {
       light: '#f4f2f5',
+      mediumLight: '#ecebed',
       dark: '#580c88',
     },
     black: '#000000',
@@ -31,6 +32,8 @@ export const theme = {
       regular: '400',
       bold: '700',
     },
+    fontFamily:
+      '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
   },
 };
 
