@@ -5,6 +5,7 @@ import { theme, roundedS } from '../styles/mhacks-2024';
 import Header from '../components/m24/Header';
 import { CTAButton } from '../components/m24/CTAButton';
 import { EmailProvider } from '../components/utils/EmailProvider';
+import { HDivider } from '../components/m24/HDivider';
 
 const CONFIRMATION_URL = 'https://tally.so/r/3NYyNj';
 const CONFIRM_TEXT =
@@ -30,7 +31,7 @@ export const StripeWelcomeEmail = () => (
       <CTAButton href={CONFIRMATION_URL}>{CONFIRM_CTA}</CTAButton>
     </Section>
 
-    <Hr style={hr} />
+    <HDivider />
 
     <Section>
       <Text style={h1}>What's in MHacks 2024?</Text>
@@ -199,7 +200,7 @@ export const StripeWelcomeEmail = () => (
       </Section>
     </Section>
 
-    <Hr style={hr} />
+    <HDivider />
 
     <Section>
       <Text style={h1}>Logistics</Text>
@@ -220,7 +221,7 @@ export const StripeWelcomeEmail = () => (
       </Text>
     </Section>
 
-    <Hr style={hr} />
+    <HDivider />
 
     <Section>
       <Img
@@ -247,7 +248,7 @@ export const StripeWelcomeEmail = () => (
 
       <CTAButton href={CONFIRMATION_URL}>{CONFIRM_CTA}</CTAButton>
 
-      <Hr style={hr} />
+      <HDivider />
 
       <Text style={footer}>
         MHacks,{' '}
@@ -260,11 +261,6 @@ export const StripeWelcomeEmail = () => (
 );
 
 export default StripeWelcomeEmail;
-
-const hr = {
-  borderColor: '#e6ebf1',
-  margin: '32px 0',
-};
 
 const paragraph = {
   color: '#202020',
