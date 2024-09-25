@@ -10,7 +10,7 @@ import { anchor, textP } from '../styles/mhacks-2024';
 
 const TAGLINE = 'Optional: register interest in the Telora Founder’s Track';
 
-export function FoundersTrackEmail() {
+function FoundersTrackEmail() {
   return (
     <EmailProvider preview={TAGLINE}>
       <Section>
