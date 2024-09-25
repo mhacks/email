@@ -10,7 +10,7 @@ import { anchor, textP } from '../styles/mhacks-2024';
 
 const TAGLINE = 'Optional: register interest in the Telora Founder’s Track';
 
-export const StripeWelcomeEmail = () => (
+export const FoundersTrackEmail = () => (
   <EmailProvider preview={TAGLINE}>
     <Section>
       <Header heading={TAGLINE} actionRequired={false} />
@@ -73,4 +73,4 @@ export const StripeWelcomeEmail = () => (
   </EmailProvider>
 );
 
-export default StripeWelcomeEmail;
+export default FoundersTrackEmail;

@@ -20,7 +20,7 @@ const CONFIRM_TEXT =
   'We’re excited to have you at MHacks 2024! Confirm your spot by clicking the button below.';
 const CONFIRM_CTA = 'CONFIRM YOUR SPOT';
 
-export const StripeWelcomeEmail = () => (
+export const AcceptanceEmail = () => (
   <EmailProvider preview={CONFIRM_TEXT}>
     <Section>
       <Header heading="CONGRATS! You're in. 🎉" actionRequired={true}></Header>
@@ -263,7 +263,7 @@ export const StripeWelcomeEmail = () => (
   </EmailProvider>
 );
 
-export default StripeWelcomeEmail;
+export default AcceptanceEmail;
 
 const sponsorAnchor = {
   ...anchor,
