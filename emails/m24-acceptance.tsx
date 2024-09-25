@@ -4,7 +4,7 @@ import { Hr, Img, Link, Section, Text } from '@react-email/components';
 import { theme, roundedS } from '../styles/mhacks-2024';
 import Header from '../components/m24/Header';
 import { CTAButton } from '../components/m24/CTAButton';
-import { EmailProvider } from '../components/utils/EmailProvider';
+import { EmailProvider } from '../components/m24/EmailProvider';
 import { HDivider } from '../components/m24/HDivider';
 
 const CONFIRMATION_URL = 'https://tally.so/r/3NYyNj';

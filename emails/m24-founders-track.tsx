@@ -3,7 +3,7 @@ import * as React from 'react';
 
 import Header from '../components/m24/Header';
 import { CTAButton } from '../components/m24/CTAButton';
-import { EmailProvider } from '../components/utils/EmailProvider';
+import { EmailProvider } from '../components/m24/EmailProvider';
 import { HDivider } from '../components/m24/HDivider';
 
 const TAGLINE = 'Optional: register interest in the Telora Founder’s Track';
