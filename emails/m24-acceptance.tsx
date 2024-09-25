@@ -1,3 +1,4 @@
+import * as React from "react";
 import {
   Body,
   Button,
@@ -11,9 +12,11 @@ import {
   Section,
   Text,
 } from "@react-email/components";
-import * as React from "react";
 
-const BACKGROUND_COLOR = '#f4f2f5';
+import { GmailWrapper } from "../components/utils/GmailWrapper";
+import { theme, roundedS, roundedM, roundedL } from "../styles/mhacks-2024";
+import Header from "../components/m24/Header";
+
 const CONFIRMATION_URL = 'https://tally.so/r/3NYyNj';
 const CONFIRM_TEXT = 'We’re excited to have you at MHacks 2024! Confirm your spot by clicking the button below.';
 const CONFIRM_CTA = 'CONFIRM YOUR SPOT';
@@ -26,18 +29,7 @@ export const StripeWelcomeEmail = () => (
       <GmailWrapper>
         <Container style={container}>
           <Section>
-            <Img
-              src='https://ci3.googleusercontent.com/meips/ADKq_Nan79gAwLvKya1_2ke3631fTfT87tCSI8wbjxK2uGKaNpvFXiHzMIWLJGRE3-vauBWott7yLA-lsyqXP-IZtkKAxMWUAWaVyFYlp7NU5AO8L-7hvvG2u1wbQE2uHuCp5lSTr6bc-w=s0-d-e1-ft#https://drive.google.com/uc?export=download&id=1zhwEng3CPEFuADCxDMcicDkYES_AyMv8'
-              width="80"
-              height="80"
-              alt="MHacks logo"
-              style={roundedM}
-            />
-
-            <Text style={eyebrow}>ACTION REQUIRED</Text>
-            <Text style={{ ...h1, marginTop: '8px' }}>
-              CONGRATS! You're in. 🎉
-            </Text>
+            <Header heading="CONGRATS! You're in. 🎉" actionRequired={true}></Header>
 
             <Text style={paragraph}>{CONFIRM_TEXT}</Text>
 
@@ -184,45 +176,11 @@ export const StripeWelcomeEmail = () => (
 
 export default StripeWelcomeEmail;
 
-/**
- * A wrapper to make copy-pasting the email content into gmail include the background color of the body.
- * 
- * Copying the email from localhost to gmail involves viewing the email, pressing `cmd + a` to select all, and then pasting it into the gmail compose window.
- * Without this wrapper, the background color isn't copied over.
- * @param children takes in the email content `Container`
- * @returns 
- */
-function GmailWrapper({ children }: { children: React.ReactNode; }) {
-  return (
-    <table width='100%' style={{ background: BACKGROUND_COLOR }}>
-      <tr>
-        <td width='100%' height='100%'>
-          {children}
-        </td>
-      </tr>
-    </table>
-  );
-}
-
 const main = {
-  backgroundColor: BACKGROUND_COLOR,
+  backgroundColor: theme.colors.purple.light,
   fontFamily:
     '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Ubuntu,sans-serif',
   lineHeight: '24px'
-};
-
-const unused = {};
-
-const roundedS = {
-  borderRadius: "4px"
-};
-
-const roundedM = {
-  borderRadius: "8px"
-};
-
-const roundedL = {
-  borderRadius: "16px"
 };
 
 const container = {
