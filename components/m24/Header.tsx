@@ -1,20 +1,15 @@
-import * as React from "react";
-import {
-  Img,
-  Section,
-  Text,
-  Heading
-} from '@react-email/components';
+import * as React from 'react';
+import { Img, Section, Text, Heading } from '@react-email/components';
 
-import {roundedM} from '../../styles/mhacks-2024'
+import { theme, roundedM, textH1 } from '../../styles/mhacks-2024';
 
-export default function Header({  
+export default function Header({
   heading,
   actionRequired,
   children,
 }: {
   heading: string;
-  actionRequired: boolean,
+  actionRequired: boolean;
   children?: React.ReactNode;
 }) {
   return (
@@ -29,23 +24,24 @@ export default function Header({
 
       {actionRequired && <Text style={eyebrow}>ACTION REQUIRED</Text>}
 
-      <Heading as={'h1'} style={{...h1,  marginTop: actionRequired ? '8px' : undefined}}>{heading}</Heading>
+      <Heading
+        as={'h1'}
+        style={{
+          ...textH1,
+          marginTop: actionRequired ? theme.spacing.s : undefined,
+        }}
+      >
+        {heading}
+      </Heading>
 
       {children}
     </Section>
   );
 }
 
-const h1 = {
-  color: "#202020",
-  margin: "32px 0",
-  fontSize: "24px",
-  fontWeight: "bold",
-};
-
 const eyebrow = {
-  color: "#808080",
-  margin: "16px 0 0 0",
-  fontSize: "16px",
-  fontWeight: "bold",
+  color: theme.colors.text.secondary,
+  margin: `${theme.spacing.m} 0 0 0`,
+  fontSize: theme.text.sizes.m,
+  fontWeight: theme.text.weights.bold,
 };

@@ -1,4 +1,5 @@
-// constant literals associated with the theme of the email campaign
+// THEME
+// Constant literals associated with the theme of the email campaign
 export const theme = {
   colors: {
     purple: {
@@ -28,6 +29,12 @@ export const theme = {
       l: '20px',
       xl: '24px',
     },
+    lineHeights: {
+      s: '18px',
+      m: '24px',
+      l: '30px',
+      xl: '30px',
+    },
     weights: {
       regular: '400',
       bold: '700',
@@ -37,7 +44,43 @@ export const theme = {
   },
 };
 
-// style mixins for use in components
+// STYLE MIXINS
+// These should be created when there is a need to reuse multiple different sets of styles across components.
+export const textH1 = {
+  color: theme.colors.text.primary,
+  fontSize: theme.text.sizes.xl,
+  lineHeight: theme.text.lineHeights.xl,
+  fontWeight: theme.text.weights.bold,
+};
+
+export const textH2 = {
+  color: theme.colors.text.primary,
+  fontSize: theme.text.sizes.l,
+  lineHeight: theme.text.lineHeights.l,
+  fontWeight: theme.text.weights.bold,
+};
+
+export const textP = {
+  color: theme.colors.text.primary,
+  fontSize: theme.text.sizes.m,
+  lineHeight: theme.text.lineHeights.m,
+  fontWeight: theme.text.weights.regular,
+  margin: `${theme.text.lineHeights.m} 0`,
+};
+
+export const textPSecondary = {
+  color: theme.colors.text.secondary,
+  fontSize: theme.text.sizes.s,
+  lineHeight: theme.text.lineHeights.s,
+  fontWeight: theme.text.weights.regular,
+};
+
+export const anchor = {
+  ...textP,
+  color: theme.colors.purple.dark,
+  fontWeight: theme.text.weights.bold,
+};
+
 export const roundedS = {
   borderRadius: theme.spacing.xs,
 };

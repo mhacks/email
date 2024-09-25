@@ -26,13 +26,13 @@ export function EmailProvider({
 const main = {
   backgroundColor: theme.colors.purple.light,
   fontFamily: theme.text.fontFamily,
-  lineHeight: '24px',
+  lineHeight: theme.text.lineHeights.m,
 };
 
 const container = {
+  ...roundedL,
   backgroundColor: theme.colors.white,
   border: `1px solid ${theme.colors.purple.mediumLight}`,
   margin: `${theme.spacing.l} auto`,
   padding: theme.spacing.l,
-  ...roundedL,
 };

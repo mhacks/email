@@ -5,6 +5,8 @@ import Header from '../components/m24/Header';
 import { CTAButton } from '../components/m24/CTAButton';
 import { EmailProvider } from '../components/m24/EmailProvider';
 import { HDivider } from '../components/m24/HDivider';
+import { Footer } from '../components/m24/Footer';
+import { anchor, textP } from '../styles/mhacks-2024';
 
 const TAGLINE = 'Optional: register interest in the Telora Founder’s Track';
 
@@ -13,7 +15,7 @@ export const StripeWelcomeEmail = () => (
     <Section>
       <Header heading={TAGLINE} actionRequired={false} />
 
-      <Text style={paragraph}>
+      <Text style={textP}>
         This year at MHacks 2024, we have a special ”track” called the Founder's
         Track. We're collaborating with{' '}
         <b>
@@ -23,7 +25,7 @@ export const StripeWelcomeEmail = () => (
         to work on their startup ideas.
       </Text>
 
-      <Text style={paragraph}>
+      <Text style={textP}>
         If you opt in, you won’t be eligible for prizes from other tracks or
         sponsors, so this track isn’t for most hackers. But,{' '}
         <b>
@@ -54,7 +56,7 @@ export const StripeWelcomeEmail = () => (
         Interest form & FAQ
       </CTAButton>
 
-      <Text style={paragraph}>
+      <Text style={textP}>
         If you have any questions, please reach out to{' '}
         <Link style={anchor} href='mailto:founders-track@mhacks.org'>
           founders-track@mhacks.org
@@ -62,41 +64,13 @@ export const StripeWelcomeEmail = () => (
         .
       </Text>
 
-      <Text style={paragraph}>— The MHacks team</Text>
+      <Text style={textP}>— The MHacks team</Text>
 
       <HDivider />
 
-      <Text style={footer}>
-        MHacks,{' '}
-        <Link style={anchor} href='https://www.mhacks.org'>
-          www.mhacks.org
-        </Link>
-      </Text>
+      <Footer />
     </Section>
   </EmailProvider>
 );
 
 export default StripeWelcomeEmail;
-
-const hr = {
-  borderColor: '#e6ebf1',
-  margin: '32px 0',
-};
-
-const paragraph = {
-  color: '#202020',
-  margin: '24px 0',
-  fontSize: '16px',
-  lineHeight: '24px',
-  textAlign: 'left' as const,
-};
-
-const anchor = {
-  color: '#580C88',
-};
-
-const footer = {
-  color: '#808080',
-  fontSize: '12px',
-  lineHeight: '16px',
-};
