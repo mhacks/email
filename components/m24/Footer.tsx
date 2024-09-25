@@ -16,6 +16,7 @@ export function Footer() {
 const footer = {
   color: theme.colors.text.secondary,
   fontSize: theme.text.sizes.s,
+  margin: 0,
 };
 
 const link = {
