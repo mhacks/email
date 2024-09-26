@@ -62,7 +62,7 @@ function HackerGuideEmail() {
 
         <Text style={textP}>
           Travel reimbursement offers have been sent out to all hackers who
-          applied and were selected. We were’t able to accommodate all
+          applied and were selected. We weren’t able to accommodate all
           reimbursement requests unfortunately.
         </Text>
       </Section>
