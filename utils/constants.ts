@@ -1,1 +1,1 @@
-export const QUESTIONS_EMAIL = 'hackathon@macks.org';
+export const QUESTIONS_EMAIL = 'hackathon@mhacks.org';
