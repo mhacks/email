@@ -8,6 +8,7 @@ import { Text } from '@react-email/components';
 
 const PREVIEW_LINE = 'This is an empty email'; // TODO: replace me
 
+// TODO: rename me
 function EmptyTemplate() {
   return (
     <EmailProvider preview={PREVIEW_LINE}>
@@ -30,6 +31,7 @@ function EmptyTemplate() {
 export default EmptyTemplate;
 
 // if needed, overwrite theme styles with custom styles for your component
+// TODO: delete me
 const customStyle = {
   ...textP,
   color: theme.colors.purple.dark,
