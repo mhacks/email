@@ -33,10 +33,10 @@ export function CTAButton({
 
 const button = {
   ...roundedS,
-  testValue: 'test',
   fontSize: theme.text.sizes.l,
   fontWeight: theme.text.weights.bold,
   textAlign: 'center' as const,
   width: '100%',
   padding: '20px 0px',
+  boxSizing: 'border-box' as const,
 };
