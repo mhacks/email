@@ -26,7 +26,7 @@ function HackerGuideEmail() {
       <HDivider />
 
       <Section>
-        <Heading style={textH2}>Slack</Heading>
+        <Heading style={textH2}>Slack 💬</Heading>
 
         <Text style={textP}>
           This is a Slack workspace for the MHacks 2024 event. This is where all
@@ -41,7 +41,7 @@ function HackerGuideEmail() {
       <HDivider />
 
       <Section>
-        <Heading style={textH2}>Hacker guide</Heading>
+        <Heading style={textH2}>Hacker guide 📕</Heading>
 
         <Text style={textP}>
           This document is your go-to guide for everything you need to know
@@ -50,16 +50,14 @@ function HackerGuideEmail() {
           more.
         </Text>
 
-        <CTAButton href={HACKER_GUIDE_LINK} variant='outline'>
-          Hacker guide
-        </CTAButton>
+        <CTAButton href={HACKER_GUIDE_LINK}>HACKER GUIDE</CTAButton>
       </Section>
 
       <HDivider />
 
       <Section>
         <Heading style={textH2}>
-          Travel reimbursement offers have been sent
+          Travel reimbursement offers have been sent 🛩️
         </Heading>
 
         <Text style={textP}>

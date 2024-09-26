@@ -6,7 +6,7 @@ import { textP, theme } from '../styles/mhacks-2024';
 import { HDivider } from '../components/m24/HDivider';
 import { Text } from '@react-email/components';
 
-const PREVIEW_LINE = 'This is an empty email'; // TODO: replace me
+const PREVIEW_LINE = 'This is an empty email. Edit me!'; // TODO: replace me
 
 // TODO: rename me
 function EmptyTemplate() {
