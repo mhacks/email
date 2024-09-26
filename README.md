@@ -2,7 +2,9 @@
 
 Email templates using React Email
 
-<img width="2282" alt="image" src="https://github.com/user-attachments/assets/a030e91a-3323-4c6e-ab25-73d1308b5540">
+See: [MHacks Email System](https://www.notion.so/MHacks-Email-System-7392c0b253e64c409ae5408690d90534?pvs=4)
+
+<img width="2672" alt="Screenshot 2024-09-24 at 1 35 27 PM" src="https://github.com/user-attachments/assets/f9da66c3-3a2a-4817-a318-575f248e3112">
 
 # React Email Starter
 
