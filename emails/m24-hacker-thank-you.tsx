@@ -1,5 +1,6 @@
 import React from 'react';
 import { EmailProvider } from '../components/m24/EmailProvider';
+import { SocialLinks } from '../components/SocialLinks';
 import { Footer } from '../components/m24/Footer';
 import Header from '../components/m24/Header';
 import { roundedS, textH2, textP, theme } from '../styles/mhacks-2024';
@@ -69,33 +70,14 @@ function HackerThankYouEmail() {
       <HDivider />
 
       <Section>
-        <Heading as={'h2'} style={textH2}>
-          Follow MHacks
-        </Heading>
-
-        <Row>
-          <Column>
-            <CTAButton href='//TODO: ' variant='outline'>
-              X
-            </CTAButton>
-          </Column>
-          <Column>
-            <CTAButton href='//TODO: ' variant='outline'>
-              Instagram
-            </CTAButton>
-          </Column>
-        </Row>
-      </Section>
-
-      <HDivider />
-
-      <Section>
         <Text style={textP}>
           We hope you had an amazing time at MHacks 2024! We’re so grateful to
           have had you join us for the weekend.
         </Text>
 
         <Text style={textP}>– MHacks Team &lt;3</Text>
+
+        <SocialLinks />
       </Section>
 
       <HDivider />
