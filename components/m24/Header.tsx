@@ -8,7 +8,7 @@ export default function Header({
   actionRequired,
   children,
 }: {
-  heading: string;
+  heading: string | React.ReactNode;
   actionRequired: boolean;
   children?: React.ReactNode;
 }) {
